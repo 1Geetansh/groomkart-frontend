@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import API from '../api/axios';
 import './Home.css';
 
@@ -7,6 +8,7 @@ function Home() {
   const [salons, setSalons] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   // Get the logged in user's name from localStorage
   const user = JSON.parse(localStorage.getItem('groomkart_user') || '{}');
@@ -61,7 +63,11 @@ function Home() {
 
         <div className="home-salon-grid">
           {salons.map((salon) => (
-            <div key={salon._id} className="salon-card">
+  <div
+    key={salon._id}
+    className="salon-card"
+    onClick={() => navigate(`/salon/${salon._id}`)}
+  >
               <div className="salon-card-image-placeholder">
                 {salon.name.charAt(0)}
               </div>

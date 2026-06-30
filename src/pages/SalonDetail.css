@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.salon-detail-page {
+  min-height: 100vh;
+  background: #FAF6F0;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 100px;
+}
+
+.salon-detail-state {
+  padding: 60px 48px;
+  font-size: 14px;
+  color: #8A7E6F;
+}
+
+.salon-detail-error {
+  color: #A8472B;
+}
+
+.salon-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 48px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EDE3D5;
+}
+
+.salon-detail-back {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5C5347;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.salon-detail-back:hover {
+  color: #A8472B;
+}
+
+.salon-detail-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #A8472B;
+  margin: 0;
+}
+
+.salon-detail-hero {
+  display: flex;
+  gap: 32px;
+  padding: 40px 48px;
+  max-width: 900px;
+}
+
+.salon-detail-hero-image {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #A8472B 0%, #C97A4A 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.salon-detail-hero-info h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #1C1815;
+  margin: 0 0 6px;
+}
+
+.salon-detail-location {
+  font-size: 13px;
+  color: #B3A795;
+  margin: 0 0 12px;
+}
+
+.salon-detail-desc {
+  font-size: 14px;
+  color: #8A7E6F;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.salon-detail-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.salon-detail-tag {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5C5347;
+  background: #F2EBDD;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.salon-detail-luxury {
+  background: #FBEAE3;
+  color: #A8472B;
+}
+
+.salon-detail-services {
+  padding: 0 48px;
+  max-width: 700px;
+}
+
+.salon-detail-services h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1C1815;
+  margin: 0 0 20px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border: 1.5px solid #EDE3D5;
+  border-radius: 12px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.service-item:hover {
+  border-color: #D8B89E;
+}
+
+.service-item-selected {
+  border-color: #A8472B;
+  background: #FDF7F2;
+}
+
+.service-item-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1C1815;
+  margin: 0 0 4px;
+}
+
+.service-item-info p {
+  font-size: 13px;
+  color: #8A7E6F;
+  margin: 0 0 6px;
+}
+
+.service-item-duration {
+  font-size: 12px;
+  color: #B3A795;
+}
+
+.service-item-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1C1815;
+}
+
+.service-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1.5px solid #D8B89E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: all 0.15s ease;
+}
+
+.service-checkbox-checked {
+  background: #A8472B;
+  border-color: #A8472B;
+}
+
+.salon-detail-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1C1815;
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salon-detail-footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #FAF6F0;
+}
+
+.salon-detail-footer-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.salon-detail-footer-btn {
+  background: #A8472B;
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.salon-detail-footer-btn:hover {
+  background: #C1602F;
+}
