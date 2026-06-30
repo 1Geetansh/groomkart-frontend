@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.home-page {
+  min-height: 100vh;
+  background: #FAF6F0;
+  font-family: 'Inter', sans-serif;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 48px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EDE3D5;
+}
+
+.home-logo {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #A8472B;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.home-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-greeting {
+  font-size: 14px;
+  color: #5C5347;
+  font-weight: 500;
+}
+
+.home-logout-btn {
+  padding: 9px 18px;
+  border: 1.5px solid #EDE3D5;
+  border-radius: 8px;
+  background: transparent;
+  color: #5C5347;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.home-logout-btn:hover {
+  border-color: #A8472B;
+  color: #A8472B;
+}
+
+.home-hero {
+  padding: 56px 48px 40px;
+  max-width: 700px;
+}
+
+.home-hero h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1C1815;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.home-hero p {
+  font-size: 16px;
+  color: #8A7E6F;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.home-salons {
+  padding: 0 48px 64px;
+}
+
+.home-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #A8472B;
+  margin: 0 0 24px;
+}
+
+.home-state-text {
+  font-size: 14px;
+  color: #8A7E6F;
+}
+
+.home-error {
+  color: #A8472B;
+}
+
+.home-salon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.salon-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #EDE3D5;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.salon-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(168, 71, 43, 0.1);
+}
+
+.salon-card-image-placeholder {
+  height: 120px;
+  background: linear-gradient(135deg, #A8472B 0%, #C97A4A 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.salon-card-body {
+  padding: 18px 20px 20px;
+}
+
+.salon-card-body h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1C1815;
+  margin: 0 0 4px;
+}
+
+.salon-card-location {
+  font-size: 13px;
+  color: #B3A795;
+  margin: 0 0 8px;
+}
+
+.salon-card-desc {
+  font-size: 13px;
+  color: #8A7E6F;
+  margin: 0 0 14px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.salon-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salon-card-rating {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5C5347;
+}
+
+.salon-card-luxury-tag {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #FBEAE3;
+  color: #A8472B;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .home-header, .home-hero, .home-salons {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .home-hero h2 {
+    font-size: 28px;
+  }
+}
